@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <form method="post" action="/register" onsubmit="return signvalid()">
+            <h3 class="register-headlines">User Name</h3>
+            <input name="username" id="name" placeholder="Enter a user name" type="text" class="register-inputs">
+            <h3 class="register-headlines">Email</h3>
+            <input name="email" id="email" placeholder="Enter an email" type="email" class="register-inputs">
+            <h3 class="register-headlines">Password</h3>
+            <input name="password" id="password" placeholder="Enter a password" type="password" class="register-inputs">
+            <h3 class="register-headlines">Confirm Password</h3>
+            <input name="password-again" id="password-again" placeholder="Enter the password again" type="password" class="register-inputs">
+            <input value="sign in" type="submit" id="sign-button">
+        </form>
+    </div>
+    <script src="signValidations.js"></script>
+</body>
+
+</html>
